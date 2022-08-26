@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
 }
+
 body{
   background: linear-gradient(
     90deg,
@@ -46,7 +47,8 @@ span {
 .quantity-buttons{
   width: 20px;
 }
-.total-amount{
+
+.totalAmount{
   padding-top: 15px;
   font-size: 20px;
   font-weight: bold;
@@ -60,8 +62,20 @@ span {
   display: flex;
 }
 
-.proj-name{
+.projName{
   font-size: 40px;
   color: rgb(103, 255, 125);
   padding: 0 0 10px 10px;
+}
+
+.addItem{
+  width: auto;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  background-color:rgb(144, 247, 218);
+  color: black;
 }

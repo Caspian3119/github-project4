@@ -18,11 +18,11 @@ const CartItems = ({name, price, image, quantity, dispatch, id}) => {
             <small>Quantity: {quantity}</small>
         </p>
         <p>
-            <button className = "quantity-buttons" onClick={ () => dispatch({ type: 'QUANTITY', payload: {type: 'DECREMENT', id: id}})}> - </button>
-            <button className = "quantity-buttons" onClick={ () => dispatch({ type: 'QUANTITY', payload: {type: 'INCREMENT', id: id}})}> + </button>
+            <button className={ItemContainer.quantityBtn} onClick={ () => dispatch({ type: 'QUANTITY', payload: {type: 'DECREMENT', id: id}})}> - </button>
+            <button className={ItemContainer.quantityBtn} onClick={ () => dispatch({ type: 'QUANTITY', payload: {type: 'INCREMENT', id: id}})}> + </button>
         </p>
         <p>
-            <button className = "buttons" onClick={() => dispatch({ type: 'CART-ITEM-DELETE', payload: {id: id}})}>Delete</button>
+            <button className={ItemContainer.btn} onClick={() => dispatch({ type: 'CART-ITEM-DELETE', payload: {id: id}})}>Delete</button>
         </p>
         </div>
   </div>

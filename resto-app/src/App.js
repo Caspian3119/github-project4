@@ -1,4 +1,3 @@
-import "./App.css";
 import React, { useReducer } from "react";
 import ItemBox from "./components/ItemBox";
 import FilterCartItem from "./components/FilterCartItem";
@@ -7,6 +6,7 @@ import EditItem from "./components/EditItemForm";
 import { v4 as uuidv4 } from "uuid";
 import CartItems from "./components/CartItems";
 import Logo from "./components/image/bamboo.png"
+import Styles from './App.module.css'
 
 const App = () => {
   // RESTO APP
@@ -289,14 +289,14 @@ const App = () => {
     
     const totalAmount = getTotal();
   return (
-    <div className="App"> 
+    <div className={Styles.App}> 
       {/* RESTO APP */}
-      <div className="header">
-       <img src={Logo} alt="logo"/><p className="proj-name">Bamboo Cafe</p>
+      <div className={Styles.header}>
+       <img src={Logo} alt="logo"/><p className={Styles.projName}>Bamboo Cafe</p>
       </div>
 
       <br />
-        <button className = "addItem" onClick={showAddItemForm}>Add Item</button>
+        <button className={Styles.addItem} onClick={showAddItemForm}>Add Item</button>
       <br />
 
       {state.newItems ? <NewItem submit={addItem} cancel={showAddItemForm} /> : ""}
@@ -306,9 +306,9 @@ const App = () => {
         <FilterCartItem filterCategory={filterCategory} categories={categories}/>
       <br />
 
-      <div className="ItemList">{listItems}</div>
-        <p className="total-amount">Total Amount: Php {totalAmount}</p>
-      <div className="ItemList">{listCartItems}</div>
+      <div className={Styles.ItemList}>{listItems}</div>
+        <p className={Styles.totalAmount}>Total Amount: Php {totalAmount}</p>
+      <div className={Styles.ItemList}>{listCartItems}</div>
     </div>
   );
 };
