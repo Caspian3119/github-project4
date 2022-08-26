@@ -1,0 +1,60 @@
+.itemContainer{
+    border: darkgray 1px solid;
+    width: 200px;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.img{
+    width: 100px
+}
+
+.form{
+    margin: 10px auto;
+    border: 1px solid black;
+    width: 25%;
+    padding: 10px;
+    box-shadow: 1px black;
+}
+
+.submitBtn{
+    background-color: cyan;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.1rem;
+    border: grey;
+    color: black;
+    cursor: pointer;
+}
+
+.editItem{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.addItem{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quantity{
+    margin: 0 7px 0 7px;
+}
+
+.quantityBtn{
+    width: 20px;
+}
+
+.btn{
+    width: 60px; 
+}
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+    .form{
+        width: 70%;
+    }
+    .submitBtn{
+     margin-top: 10px;
+    }
+}
